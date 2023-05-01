@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     border: none;
-    background-color: #A3CFCD;
 }
 
 
@@ -20,7 +19,6 @@ h1,
 h2 {
     font-family: "Rufina", serif;
     font-weight: 400 bold;
-    text-transform: capitalize;
     letter-spacing: 4px;
     color: #006554;
 }
@@ -92,6 +90,29 @@ h2 {
     }
 
     to {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
+
+#cover-text {
+    font-family: Oxygen, sans-serif;
+    font-weight: 400;
+    font-size: large;
+    color: #324B4A;
+    text-align: center;
+
+    width: 400px;
+    height: 100px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+
+    background-color: rgba(163, 207, 205, .9);
+
+    bottom: 110px;
+    right: 30px;
+
+    position: absolute;
+}
+
