@@ -163,7 +163,7 @@ hr {
 
 #meditation-benefits {
     width: 100%;
-    height: 600px;
+    height: 800px;
 
     background-image: url("../images/benefits.webp");
     background-size: cover;
@@ -205,59 +205,90 @@ hr {
     float: right;
 }
 
-.inline {
-    display: inline;
-}
+/*Exercises and Retreat Section*/
 
 #get-started {
     background-image: url("../images/get-started.webp");
-    width: 50%;
+    width: 49.5%;
     height: 600px;
-    position: relative;
     background-size: cover;
     overflow: hidden;
     background-position: center;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px white solid;
+    display: inline-block;
+    position: inherit;
+    left: 0;
+    bottom: 0;
     box-sizing: border-box;
 }
+
+
 
 #retreats {
     background-image: url("../images/retreats.webp");
-    width: 50%;
+    width: 49.5%;
     height: 600px;
-    position: relative;
     background-size: cover;
     overflow: hidden;
     background-position: center;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px white solid;
+    display: inline-block;
+    position: inherit;
+    left: 50%;
+    bottom 600px;
     box-sizing: border-box;
 }
 
-.inline h2 {
-    width: 100%;
-    height: 60px;
+#get-started>a {
+    width: 50%;
+    height: fit-content;
     font-size: x-large bold;
     text-decoration: none;
     text-align: 50%;
     vertical-align: 50%;
-    background-color: rgb(255, 255, 255, 0.2);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    position: 50% 50%;
+    background-color: rgb(255, 255, 255, 1);
 }
 
-.page-footer {
-    border-top: 1px solid var(--headline-color);
-    height: 100px;
-    /* controls footer height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    position: absolute;
-    /* needed to keep footer at btm of page */
-    width: 100%;
-    bottom: 0;
-    /* needed to keep footer at btm of page */
+#get-started>a>h2 {
+    background-color: aqua;
+}
+
+#retreats>a {
+    width: 50%%;
+    height: fit-content;
+    font-size: x-large bold;
+    text-decoration: none;
+    text-align: 50%;
+    vertical-align: 50%;
+    position: 50% 50%;
+    background-color: rgb(255, 255, 255, 0.2);
+
+}
+
+#retreats>a>h2 {
+    background-color: aqua;
+}
+
+/* Footer Section*/
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
 }
