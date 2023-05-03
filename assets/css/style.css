@@ -9,6 +9,7 @@
 
 body {
     font-family: Oxygen, sans-serif;
+    font-size: large;
     font-weight: 300;
     color: #324B4A;
 
@@ -22,6 +23,9 @@ h2 {
     font-weight: 400 bold;
     letter-spacing: 4px;
     color: #006554;
+    font-size: xx-large;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #logo {
@@ -74,7 +78,6 @@ h2 {
     height: 600px;
     width: 100%;
     overflow: hidden;
-
     position: relative;
 }
 
@@ -146,16 +149,13 @@ h2 {
 
 hr {
     height: 22px;
-    width: 400px;
+    width: 100%;
 }
 
 /* Adding styling to the Meditation Benefits Section */
 #why {
     width: 100%;
     height: 60px;
-    font-size: x-large;
-    text-align: center;
-    vertical-align: middle;
     background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -245,34 +245,48 @@ hr {
     width: 50%;
     height: fit-content;
     font-size: x-large bold;
+    text-align: center;
     text-decoration: none;
-    text-align: 50%;
-    vertical-align: 50%;
-    position: 50% 50%;
     background-color: rgb(255, 255, 255, 1);
 }
 
 #get-started>a>h2 {
-    background-color: aqua;
+    width: 50%;
+    height: fit fit-content;
+    text-align: center;
+    background-color: rgba(163, 207, 205, 0.8);
+    position: relative;
+    left: 25%;
+    top: 50%;
 }
 
 #retreats>a {
     width: 50%%;
     height: fit-content;
     font-size: x-large bold;
+    text-align: center;
     text-decoration: none;
-    text-align: 50%;
-    vertical-align: 50%;
-    position: 50% 50%;
     background-color: rgb(255, 255, 255, 0.2);
-
 }
 
 #retreats>a>h2 {
-    background-color: aqua;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+    background-color: rgba(163, 207, 205, 0.8);
+    position: relative;
+    left: 25%;
+    top: 50%;
 }
 
 /* Footer Section*/
+
+.footer-line {
+    width: 100%;
+    height: 2px;
+    background-color: #006554;
+    margin: 20px 0 0 0;
+}
 
 footer {
     height: 150px;
@@ -287,8 +301,41 @@ footer {
 }
 
 .social-networks i {
-    font-size: 160%;
+    font-size: 180%;
     margin: 1%;
     padding: 5%;
-    color: #3a3a3a;
+    color: #324B4A;
+}
+
+/* Excercises page styling*/
+
+#intro-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+    background-size: cover;
+
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+
+.video {
+    min-width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
 }
