@@ -214,7 +214,7 @@ hr {
     background-size: cover;
     overflow: hidden;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.9;
     border: 2px white solid;
     display: inline-block;
     position: inherit;
@@ -232,7 +232,7 @@ hr {
     background-size: cover;
     overflow: hidden;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.9;
     border: 2px white solid;
     display: inline-block;
     position: inherit;
@@ -254,6 +254,7 @@ hr {
     width: 50%;
     height: fit fit-content;
     text-align: center;
+    opacity: 1;
     background-color: rgba(163, 207, 205, 0.8);
     position: relative;
     left: 25%;
@@ -273,6 +274,7 @@ hr {
     width: 50%;
     height: fit-content;
     text-align: center;
+    opacity: 1;
     background-color: rgba(163, 207, 205, 0.8);
     position: relative;
     left: 25%;
@@ -340,10 +342,75 @@ footer {
     border: none;
 }
 
-/* Style about page*/
+/* Style contact page*/
 
-#no-image {
+form {
     width: 100%;
-    height: 60px;
-    background-color: white;
+    height: 700px;
+    background: url(../images/contact-form.webp) no-repeat top center fixed;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: 1px;
+}
+
+.form-container {
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-form {
+    width: 18.5%;
+    height: fit-content;
+    font-family: Oxygen, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: #324B4A;
+    letter-spacing: 4px;
+    float: right;
+    border: thin solid rgba(163, 207, 205, 1);
+    padding: 20px;
+    margin: 10px;
+    display: inline;
+    top: 30px;
+    position: relative;
+}
+
+.contact-form-text {
+    width: 41.3%;
+    height: 250px;
+    font-family: Oxygen, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: #324B4A;
+    letter-spacing: 4px;
+    float: right;
+    border: thin solid rgba(163, 207, 205, 1);
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+}
+
+.get-in-touch {
+    width: 20%;
+    height: fit-content;
+    font-family: Oxygen, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: #324B4A;
+    letter-spacing: 4px;
+    background-color: rgba(163, 207, 205, 0.8);
+    float: right;
+    padding: 20px;
+    margin: 10px;
+    top: 20px;
+    position: relative;
 }
