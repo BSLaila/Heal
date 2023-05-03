@@ -10,9 +10,9 @@
 body {
     font-family: Oxygen, sans-serif;
     font-size: large;
-    font-weight: 300;
+    font-weight: 400;
     color: #324B4A;
-
+    letter-spacing: 4px;
 }
 
 /*headings and logo*/
@@ -281,10 +281,10 @@ hr {
 
 /* Footer Section*/
 
-.footer-line {
+.line {
     width: 100%;
     height: 2px;
-    background-color: #006554;
+    background-color: #324B4A;
     margin: 20px 0 0 0;
 }
 
@@ -338,4 +338,12 @@ footer {
     min-width: 100%;
     aspect-ratio: 16/9;
     border: none;
+}
+
+/* Style about page*/
+
+#no-image {
+    width: 100%;
+    height: 60px;
+    background-color: white;
 }
