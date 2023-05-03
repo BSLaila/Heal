@@ -17,6 +17,10 @@ body {
 
 /*headings and logo*/
 
+h1 {
+    font-size: xxx-large;
+}
+
 h1,
 h2 {
     font-family: "Rufina", serif;
@@ -314,7 +318,7 @@ footer {
 #intro-image {
     height: 600px;
     width: 100%;
-    background: url('../images/hero-image.webp') no-repeat center center;
+    background: url('../images/exercises.webp') no-repeat center center;
     background-size: cover;
 
 
@@ -324,7 +328,7 @@ footer {
     animation-fill-mode: forwards;
 }
 
-/* creates the level of zoom for hero image */
+/* creates the level of zoom for image */
 @keyframes hero-zoom {
     from {
         transform: scale(1);
@@ -340,6 +344,36 @@ footer {
     min-width: 100%;
     aspect-ratio: 16/9;
     border: none;
+}
+
+/*Style retreats page*/
+
+#intro-image-retreats {
+    height: 600px;
+    width: 100%;
+    background: url('../images/retreat-page.webp') no-repeat center center;
+    background-size: cover;
+
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creates the level of zoom for image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+#retreat-contact {
+    text-decoration: none;
 }
 
 /* Style contact page*/
@@ -413,4 +447,26 @@ form {
     margin: 10px;
     top: 20px;
     position: relative;
+}
+
+/*Style About Page*/
+
+#about-image {
+    display: inline;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: right;
+    margin: 10px;
+}
+
+#about-text {
+    display: inline;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    margin: 10px;
+    text-align: center;
+
 }
