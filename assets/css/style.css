@@ -145,6 +145,7 @@ h2 {
     border-radius: 25%;
     background-color: inherit;
     padding: 5px;
+    box-shadow: 10px 5px 5px #006554;
 }
 
 .learn-more a:hover {
@@ -241,7 +242,7 @@ hr {
     display: inline-block;
     position: inherit;
     left: 50%;
-    bottom 600px;
+    bottom: 600px;
     box-sizing: border-box;
 }
 
@@ -266,7 +267,7 @@ hr {
 }
 
 #retreats>a {
-    width: 50%%;
+    width: 50%;
     height: fit-content;
     font-size: x-large bold;
     text-align: center;
